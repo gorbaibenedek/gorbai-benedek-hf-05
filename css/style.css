@@ -250,9 +250,6 @@ box-sizing: content-box;
 }
 
 
-
-
-
 footer p {
 
     margin: 0;
@@ -260,12 +257,6 @@ footer p {
     text-align: center;
 }
 
-
-
-/* .copyright img {
-    min-width: 10%;
-
-} */
 
 .copyright h3 {
     text-align: center;
@@ -288,9 +279,9 @@ footer p {
 #nav li{
     width: 100%;
 }
-footer img{
+/* footer img{
     min-width: 10%;
-}
+} */
 
 footer #asd img{
 
@@ -298,7 +289,7 @@ footer #asd img{
 }
 
   
-    
+
 
 
 
@@ -480,3 +471,11 @@ footer #asd img{
 
     }
         }
+        @media only screen and (max-width: 400px) {
+            .copyright li a  {
+          display:block ;
+          float: none;
+          width:50%;
+          margin:10px auto;
+              }
+          }
