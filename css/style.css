@@ -1,214 +1,134 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
+
 }
 
 
-html{
+html {
 
 
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-background-color:#D7B520 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #D7B520;
 }
 
-body{ 
-    background-color:#FFF;
+body {
+    background-color: #FFF;
     width: 80%;
     margin: 0 auto;
     border: 2px solid #ddd;
 }
+
 /* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 30%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
-@media screen and (max-width: 768px) {
-    *{
-        overflow: auto;
-    
-        clear: both;
-     
-    }
-    img#szelidi-to{
-        display: block;
-        float: right;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        margin-right: 5%;
-        
-    
-    }
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-    }
+/* [class*="col-"] {
+    width: fit-content;
+  } */
 
-    .wrapper section:first-child{
-        order: 1;
-    }
-    #aside{
-        display: inline;
-        float: right;
-        background-color: #FFF;
-        
-        margin: 0;
-        z-index: 1;
-        width: fit-content;
-    }
-      
 
-      [class*="col-"] {
-        float: left;
-        padding: 15px;
-      }
 
-form{
-    display: block;
-    width: 100%;
-    clear: both;
-    display: inline-block;
 
-}
+header,
+footer,
 #no-1,
 #no-2,
-#no-3{
-    min-width:fit-content;
-   
-    
-}
-    .cover{
-        height: 100px;
-    }
-    .header {
-		display:none;
-		}
-	
-	.maincontent{ 
-		text-align:left;
-		}
-	.content {
-		width: 100%;
-	}
-	.footer {
-		display:none;
-			}
-	.sidebar1 {
-		float:none;
-		display:none; 
-	}
-	.maincontent div {
-		 text-align:left;
-	}
-	.calendar {
-		width:max-content
-	}
-	}
-    
-  
-
-header,footer,#no-1,#no-2,#no-3{
+#no-3 {
     padding: 10px;
 }
-.cover{
-    
+
+.cover {
+
     border: 1px solid blue;
-    width:  100%;
+    width: 100%;
     display: block;
     border-radius: 20px;
-    
-    
+
+
 }
 
-header img{
+header img {
     display: block;
 }
-ul{
-    
+
+ul {
+
     list-style-type: none;
-    
+
 }
 
 
-li a{
+li a {
     display: block;
     text-decoration: none;
-    padding:5px;
+    padding: 5px;
     margin: 5px;
     border: 1px solid brown;
     border-radius: 20px;
     text-align: center;
-
+    background-color: rgb(217, 239, 240);
 }
-#aside{
+
+li a:hover {
+    background-color: dodgerblue;
+}
+
+#aside {
     /* width: 30%; */
     border-radius: 20px;
     border: 1px solid blue;
     margin: 10px;
-   background-color: rgb(114, 155, 204);
-   color:#000000
-    
+    background-color: rgb(114, 155, 204);
+    color: #000000
 }
-.wrapper{
+
+.wrapper {
     background-color: #FFF;
 }
-.wrapper h2{
+
+.wrapper h2,h3 {
     font-style: italic;
     font-size: 1.2rem;
 }
-form{
+
+form {
     width: inherit;
     display: block;
-    
-    
+
+
 }
 
-label{
+label {
     display: inline-block;
     padding: 5px 0;
 }
 
-input{
-    width:fit-content;
+input {
+    /* width:fit-content; */
+    /* width: 120px; */
 }
-#left-shift label{
+
+#left-shift label {
     display: block;
 }
-input[type=submit]{
+
+input[type=submit] {
     display: block;
     padding: 5px;
 }
 
-.centered{
-  
-   display: inline;
-   /* width: 30%; */
-  
+.centered {
+
+    display: inline;
+    /* width: 30%; */
+
 }
 
 
-#left-shift{
-display:block;
-width:50%;
-clear: left;
-margin: 0 auto;
+#left-shift {
+    display: block;
+    width: 50%;
+    clear: left;
+    margin: 0 auto;
 }
 
 #right-shift {
@@ -216,93 +136,95 @@ margin: 0 auto;
     display: block;
     margin: 0 auto;
 
-   
-    
+
+
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 /* textarea{
     width: 50%;
     display: block;
     margin: 0 auto;
 } */
-  h2{
-   
+h2 {
+
     text-align: center;
     margin: 0 auto;
-  }
+}
 
-img#Balaton{
+img#Balaton {
     display: block;
     float: right;
-    width:35%;
+    width: 35%;
 
     border-radius: 20px;
     margin: 10px;
     margin-right: 5%;
-    
-    
+
+
 }
 
-img#tisza-to{
+img#tisza-to {
     display: block;
     float: right;
     width: 35%;
     border-radius: 20px;
     margin: 10px;
     margin-right: 5%;
-    
-    
+
+
 
 }
 
-img#szelidi-to{
+img#szelidi-to {
     display: block;
     float: right;
     width: 35%;
     border-radius: 20px;
     margin: 10px;
     margin-right: 5%;
-    
+
 
 }
-#no-1{
-   float: right;
-   width: 65%;
+
+#no-1 {
+    float: right;
+    width: 65%;
     border: 1px solid blue;
-    margin:10px 10px 5px 5px;
+    margin: 0px 10px 5px 5px;
     border-radius: 20px;
     background-color: rgb(255, 240, 220);
     color: rgb(22, 54, 14);
-    
+
 }
 
-#no-2{
+#no-2 {
     float: right;
     width: 65%;
-     border: 1px solid blue;
-     margin:10px 10px 5px 5px;
-     border-radius: 20px;
-     background-color: rgb(239, 184, 112);
-     color: rgb(18, 33, 54);
- }
+    border: 1px solid blue;
+    margin: 10px 10px 5px 5px;
+    border-radius: 20px;
+    background-color: rgb(239, 184, 112);
+    color: rgb(18, 33, 54);
+}
 
- #no-3{
+#no-3 {
     float: right;
     width: 65%;
-     border: 1px solid blue;
-     margin:10px 10px 5px 5px;
-     border-radius: 20px;
-     background-color: rgb(202, 209, 236);
-     color: rgb(3, 3, 4);
- }
+    border: 1px solid blue;
+    margin: 10px 10px 5px 5px;
+    border-radius: 20px;
+    background-color: rgb(202, 209, 236);
+    color: rgb(3, 3, 4);
 
- footer{
+}
+
+/* footer{
 
     
 
@@ -311,4 +233,250 @@ img#szelidi-to{
  footer img{
     width: 100%;
     opacity: 0.3;
- }
+ } */
+
+/* Style for the social media list */
+
+footer {
+box-sizing: content-box;
+    display:block;
+    background-color: azure;
+    padding: 10px 0;
+    border: 1px solid blue;
+    border-radius: 20px;
+    margin: 10px;
+
+
+}
+
+
+
+
+
+footer p {
+
+    margin: 0;
+
+    text-align: center;
+}
+
+
+
+/* .copyright img {
+    min-width: 10%;
+
+} */
+
+.copyright h3 {
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+
+.copyright li a {
+    width: 32%;
+    
+    text-align: center;
+    float: right;
+    border: none;
+    border-radius: 20px;
+
+}
+
+#nav li{
+    width: 100%;
+}
+footer img{
+    min-width: 10%;
+}
+
+footer #asd img{
+
+    display: none;
+}
+
+  
+    
+
+
+
+@media only screen and (max-width: 998px) {
+    /* For desktop: */
+
+    input,
+    textarea,
+    footer {
+
+        max-width: 100%;
+    }
+
+    .copyright li a {
+        width: 30%;
+ 
+    }
+}
+
+@media only screen and (min-width: 664px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 30%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 663px) {
+    * {}
+
+    img#szelidi-to {
+        width: 40%;
+    }
+
+    img#Balaton {
+
+        width: 40%;
+
+    }
+
+    img#tisza-to {
+        width: 40%;
+    }
+
+    footer #asd img{
+        display: block;
+     
+        position: fixed;
+        left: 3px;
+        bottom: 3px;
+    }
+
+    nav li a {
+        /* display: inline!important; */
+
+        /* width: 30% !important; */
+        padding: 5px;
+        margin-bottom: 20px;
+        border: 1px solid brown;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgb(217, 239, 240);
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    /* Changing order between sections! */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .wrapper section:first-child {
+        order: 1;
+    }
+
+    /* ............VÉGE.......... */
+    #aside {
+        background-color: rgb(114, 155, 204);
+        clear: both;
+        margin: 10px;
+      
+
+    }
+
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    /* form {
+        width: 100%;
+        clear: both;
+        display: inline-block;
+
+    } */
+
+    #no-1,
+    #no-2,
+    #no-3 {
+        min-width: fit-content;
+        margin: 10px;
+
+    }
+
+
+
+    .copyright li a {
+        float: left;
+        display:inline ;
+        width: 30%;
+
+    }
+
+    .copyright h3 {
+        padding: 0;
+    }
+
+    /* .copyright li a {
+        float: left;
+        display:inline ;
+        width: 30%;
+
+    }  */
+
+    .copyright a#span{
+        
+        display:block ;
+        margin: 0 auto;
+        
+
+    }
+        }
