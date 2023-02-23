@@ -10,17 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Gorbai Benedek-Házi-feladat</title>
+    <link rel="icon" href="favic.ico" type="image/x-icon">
+    <title>Magyarország tavai</title>
 </head>
 
 <body>
     <header>
-        <img class="cover" src="img/lake.jpg" alt="strand">
+        <img class="cover" class="mobile-pic" src="img/lake-cover.jpg" alt="strand">
     </header>
     <section class="wrapper">
-        <section id="1st part">
+        <section id="first part">
             <section id="no-1">
-                <img id="Balaton" src="img/balatoni-taj.jpg" alt=balatoni táj">
+                <img id="Balaton" src="img/balatoni-taj.jpg" alt="balatoni táj">
                 <h2>Balaton</h2>
                 <p>
                     A Balaton Közép-Európa és egyben Magyarország legnagyobb tava. Budapest után Magyarország
@@ -80,7 +81,7 @@
             </section>
             <div class="clear"></div>
         </section>
-        <section id="aside" class="col-3 aside">
+        <section id="aside" class="col-3 ">
             <nav>
                 <ul>
 
@@ -99,11 +100,11 @@
                 <h2>Kérem töltse ki a jelentkezési űrlapot!</h2>
                 <section id="left-shift">
                     <label for="name">Név</label>
-                    <input type="text" name="name" id="name" placeholder="Nagy Imre" required autofocus>
+                    <input type="text" name="name" id="name" placeholder="Nagy Imre" required autofocus >
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="kiss@nagy.com " required>
+                    <input type="email" name="email" id="email" placeholder="kiss@nagy.com " required >
                     <label for="tel">Telefonszám</label>
-                    <input type="tel" name="tel" id="tel" placeholder="+23-11-111" required>
+                    <input type="tel" name="tel" id="tel" placeholder="23-11-111" pattern="[0-9]" required minlength="7" maxlength="9" >
                     <label for="tavak">Melyik tó érdekli?</label>
 
                     <select name="tavak" id="tavak">
@@ -118,17 +119,17 @@
                 <section id="right-shift">
                     <label for="tavak">Milyen szállást keres?</label>
 
-                    <select name="szallas" id="szallas" multiple>
+                    <select name="szallas" id="szallas" multiple required>
                         <option value=" szálloda"> szálloda</option>
                         <option value="apartmanház">apartmanház </option>
                         <option value="kemping">kemping</option>
 
                     </select>
                     <p>Milyen ellátás legyen?</p>
-                    <input type="radio" id="teljes" name="ellastasok" value="teljes">
+                    <input type="radio" id="teljes" name="ellastasok" value="teljes" required>
                     <label for="teljes">teljes</label><br>
                     <input type="radio" id="fel-panzio" name="ellastasok" value="fél panzió">
-                    <label for="fel-panzio">fél panziö</label><br>
+                    <label for="fel-panzio">fél panzió</label><br>
                     <input type="radio" id="nem-kerek" name="ellastasok" value="nem kérek
             ellátást">
                     <label for="nem-kerek">nem kérek ellátást</label>
@@ -156,7 +157,7 @@
         <nav id="footer">
             <ul>
 
-                <h3>Kövess minket</h3>
+                <h3>Kövess minket! :)</h3>
                 <li> <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png" alt="facebook"></a>
                 </li>
                 <li><a href="https://www.instagram.com/" target="_blank"><img src="img/insta.png" alt="instagram"></a>
@@ -169,12 +170,12 @@
         <section class="clearfix"></section>
         <p>Copyright © 2023 Magyarország tavai. Minden jog fenntartva.</p>
 
-        <a id="asd" href="#"><img src="img/up.png" alt="top"></a>
+        <a id="up-page" href="#"><img src="img/up.png" alt="top"></a>
 
     </footer>
 
 
-    <!-- <img class="cover" src="img/beach.jpg" alt="strand"> -->
+    
 
 </body>
 

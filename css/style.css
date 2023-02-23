@@ -85,7 +85,8 @@ li a:hover {
     background-color: #FFF;
 }
 
-.wrapper h2,h3 {
+.wrapper h2,
+h3 {
     font-style: italic;
     font-size: 1.2rem;
 }
@@ -127,7 +128,7 @@ input[type=submit] {
 #left-shift {
     display: block;
     width: 50%;
-    clear: left;
+
     margin: 0 auto;
 }
 
@@ -191,6 +192,9 @@ img#szelidi-to {
 
 
 }
+.wrapper h2{
+    padding: 10px 0;
+}
 
 #no-1 {
     float: right;
@@ -238,8 +242,8 @@ img#szelidi-to {
 /* Style for the social media list */
 
 footer {
-box-sizing: content-box;
-    display:block;
+    box-sizing: content-box;
+    display: block;
     background-color: azure;
     padding: 10px 0;
     border: 1px solid blue;
@@ -268,7 +272,7 @@ footer p {
 
 .copyright li a {
     width: 32%;
-    
+
     text-align: center;
     float: right;
     border: none;
@@ -276,19 +280,20 @@ footer p {
 
 }
 
-#nav li{
+#nav li {
     width: 100%;
 }
+
 /* footer img{
     min-width: 10%;
 } */
 
-footer #asd img{
+footer #up-page img {
 
     display: none;
 }
 
-  
+
 
 
 
@@ -305,7 +310,7 @@ footer #asd img{
 
     .copyright li a {
         width: 30%;
- 
+
     }
 }
 
@@ -362,25 +367,24 @@ footer #asd img{
 }
 
 @media screen and (max-width: 663px) {
-    * {}
-
+    
     img#szelidi-to {
-        width: 40%;
+        width: 50%;
     }
 
     img#Balaton {
 
-        width: 40%;
+        width: 50%;
 
     }
 
     img#tisza-to {
-        width: 40%;
+        width: 50%;
     }
 
-    footer #asd img{
+    footer #asd img {
         display: block;
-     
+
         position: fixed;
         left: 3px;
         bottom: 3px;
@@ -416,9 +420,9 @@ footer #asd img{
     /* ............VÉGE.......... */
     #aside {
         background-color: rgb(114, 155, 204);
-        clear: both;
+        /* clear: both; */
         margin: 10px;
-      
+
 
     }
 
@@ -447,7 +451,7 @@ footer #asd img{
 
     .copyright li a {
         float: left;
-        display:inline ;
+        display: inline;
         width: 30%;
 
     }
@@ -463,19 +467,67 @@ footer #asd img{
 
     }  */
 
-    .copyright a#span{
-        
-        display:block ;
+    .copyright a#span {
+
+        display: block;
         margin: 0 auto;
-        
+
 
     }
-        }
-        @media only screen and (max-width: 400px) {
-            .copyright li a  {
-          display:block ;
-          float: none;
-          width:50%;
-          margin:10px auto;
-              }
-          }
+}
+
+@media only screen and (max-width: 400px) {
+    .copyright li a {
+        display: block;
+        float: none;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+.wrapper h2{
+    text-align: left;
+}
+
+    #left-shift {
+        display: block;
+        width: fit-content;
+        clear: left;
+        margin: 0;
+
+    }
+
+    #right-shift {
+        width: fit-content;
+        display: block;
+margin-right: 10px;
+       
+    }
+
+    .cover {
+
+        display: none;
+
+
+    }
+
+    header {
+
+
+        height: 170px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: blue;
+        border-width: thin;
+        background-repeat: round;
+        background-repeat: repeat-x;
+        background-position: center;
+        background-size: contain;
+        background-image: url(../img/mobile.jpg);
+        margin: 10px;
+
+    }
+
+    .cover img {
+        display: none;
+    }
+}
